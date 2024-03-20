@@ -23,7 +23,7 @@ const FunctionalComponent = () => {
       <h1>Lista de deseos</h1>
       <button onClick={() => addItem('Nuevo item')}>Agregar item</button>
       <ul>
-        {items.map((item: any, index: any) => (
+        {items.map((item: string, index: number) => (
           <li key={index}>
             {item}
             <button onClick={removeItem(index)}>Eliminar</button>
